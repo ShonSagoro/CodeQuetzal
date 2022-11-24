@@ -1,5 +1,5 @@
 import Header from "../components/Header"
-import Template from "../components/Templates"
+import Template from "../components/Template"
 import Footer from "../components/Footer"
 
 function TemplatePage() {

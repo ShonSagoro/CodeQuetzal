@@ -1,26 +1,33 @@
 import Logo from "../assets/img/LogoWhite.png"
-// import "../assets/style/Header.css"
+import "../assets/css/Header.css"
+import search from "../assets/img/lupawhite.png"
 
 function Header() {
+
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+    }
     return ( 
 
         <>
-        <div className="container">
-            <div>
-                <a href="/">
-                    <img src={Logo}></img>
-                </a>
-
-                <form  role="search">
-                    <input type="search" placeholder="Buscar..." aria-label="Search"></input>
-                </form>
-
-                <div className="text-end">
-                    <button type="button" className="">Login</button>
-                    <button type="button" className="">Sign-up</button>
+        <header>
+                <div className="box">
+                    <a href="/">
+                        <img src={Logo}></img>
+                    </a>
                 </div>
-            </div>
-        </div>
+
+                <div className="box2">
+                    <form  role="search" onSubmit={handleSubmit}>
+                        <input type="search" placeholder="Buscar..." aria-label="Search"></input>
+                        <button type="submir"><img src={search}></img></button>
+                    </form>
+                    <div>
+                        <button type="button" className="login">Login</button>
+                        <button type="button" className="singup">Sign-up</button>
+                    </div>
+                </div>
+        </header>
         </>
         
      );

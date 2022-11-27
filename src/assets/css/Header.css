@@ -1,37 +1,111 @@
-.header{
+header{
     z-index: 1 ;
     width: 100%;
-    height: 50px;
-    background-color: #BB462E;
+    height: 70px;
+    background-color: #5C6CC0;
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     top: 0;
     left: 0;
+     
+}
+
+.box{
+    flex-grow: 1;
+    
+}
+.box2{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+.box2 div{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header form input[type="search"]{
+    width: 700px;
+    height: 4vh;
+    border: none;   
+    border-radius: 60px;
+    background-color: #5360A5;
+    padding: 10px 20px;
+    align-items: center;
+    color: #DFE0FD;
+    font-family: 'Hack Nerd Font';
+    font-size: 20px;
+    
+}
+header form input[type="search"]:hover{
+    border: 1px solid #DFE0FD;
     
 }
 
-.header img{
-    color: aliceblue;
-    width: 35px;
-    height: 35px;
+
+header form button{
+    background-color: transparent;
+    border: none;
+    align-items: center;
+}
+
+header form button img{
+    width: 3vh;
+    height: 3vh;
+    margin-bottom: 7px;
+}
+
+header img{
+    width: 6vh;
+    height: 6vh;
     margin: 8px 10px 0 10px;
     cursor: pointer;
 }
 
-.header ul li a{
-    color:rgb(52, 21, 4);
-    text-decoration: none;
-    margin-right: 20px;
+
+.login{
+    margin-right: 10px;
+    width: 25%;
+    height: 4vh;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #DFE0FD;
+    border-radius: 8px;
+    font-family: 'Hack Nerd Font';
+    font-size: 15px;
+    color: #DFE0FD;
 }
 
-.header ul{
-    position: absolute;
-    top: 0;
-    right: 0;
-    list-style: none;
-    display: flex;
+.login:hover{
+    background-color: #DFE0FD;
+    color: #5360A5;
+}
+.singup{
+    width: 25%;
+    height: 4vh;
+    font-family: 'Hack Nerd Font';
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #DFE0FD;
+    color: #5360A5;
 }
 
+.singup:hover{
+    background-color: #9394b4;
+    border: none;
 
-.header ul :hover{
-    color: #f1daae;
+   
 }

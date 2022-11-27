@@ -1,0 +1,51 @@
+footer{
+    position: absolute;
+    background-color: #1B1D2B;
+    left: 0;
+    margin: auto;
+    height: 30vh;
+    width: 100%;
+
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img{
+    width: 9vh;
+
+}
+
+footer p{
+    color: #fff;
+    font-size: 2vh;
+    font-family: 'Hack Nerd Font';
+
+}
+
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+    list-style: none;
+    font-size: 30px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+footer ul li{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul li a:hover{
+    color: #aec1f1;
+}

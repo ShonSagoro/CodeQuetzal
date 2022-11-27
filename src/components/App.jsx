@@ -9,10 +9,10 @@ function App() {
             <Header/>
             <Routes>
                 <Route index element={<HomePage />}/>
-                <Route path='Home' element={<HomePage />}/>
-                <Route path='Example' element={<CardTemplate />}/>
+                <Route path='/home' element={<HomePage />}/>
+                <Route path='/example/:id' element={<CardTemplate />}/>
+                <Route path='*' element={<HomePage/>}/>
             </Routes>
-            <Route path='*' element={<HomePage/>}/>
             <Footer/>
         </BrowserRouter>
     )

@@ -1,36 +1,25 @@
-import { useEffect, useState } from "react";
+import CardTemplates from "./CardTemplates"
+import data from "../assets/data/data"
 
-function Template() {
-  const [templates, setTemplates] = useState([{}]);
+function Templates() {
 
-  useEffect(() => {
-    fetch("../assets/data/data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        setTemplates(data);
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
-  }, []);
 
   return (
     <>
       <div className="container">
-        {templates.map((template) => {
-          return (
-            <CardArtist
-              name={template.nombre}
-              description={template.descripcion}
-              autor={template.autor}
-              github={template.github}
-              image={template.image}
-            />
-          );
-        })}
+        {data.map((template) => (
+          <CardTemplates
+            key={template.id}
+            name={template.nombre}
+            description={template.descripcion}
+            autor={template.autor}
+            github={template.github}
+            image={template.imagen} />
+        ))}
       </div>
     </>
   );
 }
 
-export default Template;
+
+export default Templates;

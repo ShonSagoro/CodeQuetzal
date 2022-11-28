@@ -1,0 +1,57 @@
+.container div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Hack Nerd Font';
+}
+
+.container div .info{
+    margin-left: 10vh;
+    width: 70vh;
+    align-self: flex-start;
+}
+.container div .visual .info1 button{
+    font-family: 'Hack Nerd Font';  
+    width: 12vh;
+    height: 3vh;
+    border: none;
+    background-color: #DFE0FD;
+    color: #5360A5;
+}
+.container div .visual .info1 button:hover{
+    background-color: #626385;
+    color: #bdc5ec;
+}
+.container div .info .title{
+    width: 100%;
+    background-color: #363a5b;
+    padding: 10px;
+    color: #DFE0FD;
+}
+
+.container div div{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+}
+
+.container img{
+   width: 100vh;
+   height: 25hv;
+}
+
+.container div .visual .info1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #363a5b;
+    
+    color: #DFE0FD;
+}
+.container div .visual .info1 p{
+    margin-right: 10px;
+}
+.container div .visual .info1 a{
+    margin-left : 10px;
+}

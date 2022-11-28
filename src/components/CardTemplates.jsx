@@ -1,15 +1,26 @@
+import {useNavigate} from 'react-router-dom'
 
-function CardTemplates({name, description, autor, github, image}) {
+function CardTemplates({id, name, autor, image}) {
+    const navigate = useNavigate()
+
+    const handleClick=()=>{
+        navigate(`/example`);
+    }
+
+    
     return (  
-        <div id={"container"+name}>
-            <div>
-                <img src={image}></img>
-                <p>{autor}</p>
-            </div>
-            <div>
-                <h2>{name}</h2>
+        <div className="template" onClick={handleClick()}>
+            <div id={id}>
+                <div className="img">
+                    <img src={image}></img>
+                </div>
+                <div className="info">
+                    <p>{name}</p>
+                    <p>{autor}</p>
+                </div>
             </div>
         </div>
+        
     );
 }
 

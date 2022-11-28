@@ -1,5 +1,6 @@
 import CardTemplates from "./CardTemplates"
 import data from "../assets/data/data"
+import "../assets/css/CardTemplates.css"
 
 function Templates() {
 
@@ -10,10 +11,9 @@ function Templates() {
         {data.map((template) => (
           <CardTemplates
             key={template.id}
+            id={template.id}
             name={template.nombre}
-            description={template.descripcion}
             autor={template.autor}
-            github={template.github}
             image={template.imagen} />
         ))}
       </div>

@@ -1,16 +1,20 @@
-import ImgDefault from "../assets/img/default.jpg"
 
-function CardTemplate() {
+
+function CardTemplate({id, name, autor, image, github, description}) {
     return (
         <>
             <div>
-                <img src={ImgDefault}></img>
-                <a target="_blank" href='#'>Descargar</a>
-                <p>JuanJo</p>
-            </div>
-            <div>
-                <h2>Organizador de carpetas</h2>
-                <p>Plantilla desarrollada en python, tiene como función organizar los directorios donde frecuenta dejar archivos regados en base a la configuración que desee, trabaja con la librería PIL (Python Image Library) y Os para poder manipular y leer sus archivos.</p>
+                <div className="visual">
+                    <img src={image}></img>
+                    <div className="info1">
+                        <a target="_blank" href={github}><button>Descargar</button></a>
+                        <p>{autor}</p>
+                    </div>
+                </div>
+                <div className="info">
+                    <p className="title">{name}</p>
+                    <p>{description}</p>
+                </div>
             </div>
         </>
       );

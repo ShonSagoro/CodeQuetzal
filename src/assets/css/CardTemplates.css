@@ -1,0 +1,41 @@
+.container{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 10vh;
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    gap: 10px;
+}
+
+.container .template{
+    cursor: pointer;
+    background-color: #1B1D2B;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .template:hover{
+    background-color: #363a5b;
+}
+
+.container .template div .img img{
+    height: 30vh;
+    width: 60vh;
+}
+.container .template div .img{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container .template div .info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+ 
+    color: #DFE0FD;
+    font-family: 'Hack Nerd Font';
+}

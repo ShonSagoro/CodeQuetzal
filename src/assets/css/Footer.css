@@ -33,7 +33,8 @@ footer ul{
     justify-content: space-between;
     width: 20%;
     list-style: none;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: 'Hack Nerd Font';  
 }
 
 footer ul li a{

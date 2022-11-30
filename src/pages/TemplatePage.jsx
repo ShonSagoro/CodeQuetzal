@@ -3,6 +3,7 @@ import Template from "../components/Template"
 import Footer from "../components/Footer"
 
 function TemplatePage() {
+    console.log("estas en el ejemplo")
     return ( 
         <>
             <Header></Header>
